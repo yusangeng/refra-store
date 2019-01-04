@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-typescript",
+      {
+        "allExtensions": true
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 10"]
+        },
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
